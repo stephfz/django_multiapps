@@ -1,0 +1,9 @@
+<h1>Welcome</h1>
+
+
+<form action='/create_user' method = 'post'>
+    {% csrf_token %}
+    Name : <input type = 'text' name ='name'>
+    Email : <input type = 'text' name ='email'>
+    <button type = 'submit'> Crear Usuarios</button>
+</form>
